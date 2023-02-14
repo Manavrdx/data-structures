@@ -26,7 +26,7 @@ public class ThreeSum {
                         low++;
                     } else {
                         list.add(Arrays.asList(nums[i], nums[low], nums[high]));
-//                        doing this to incr or decr the low and high to remove duplicates
+//                        doing this to incr or decr the low and high to not compare the duplicates
                         while (low < high && nums[low] == nums[low+1]) {
                             low++;
                         }
