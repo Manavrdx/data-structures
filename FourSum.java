@@ -17,6 +17,7 @@ public class FourSum {
                 if (j > i + 1 && nums[j] == nums[j-1]) continue;
                 int start = j + 1;
                 int end = length - 1;
+
                 long firstTwoSum = nums[i] + nums[j];
                 long difference = target - firstTwoSum;
 
