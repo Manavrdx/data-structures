@@ -30,11 +30,12 @@ public class TwoSum {
             }
         }
 
+        List<Integer> list = Arrays.stream(resultSumIntegers).boxed().toList();
+        System.out.println("Output:: " + list);
         return resultSumIntegers;
     }
 
     public static int[] twoSumUsingBruteForce(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
         boolean doesSumExist = false;
         int[] result = new int[2];
         for (int i = 0; i < nums.length - 1; i++) {
